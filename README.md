@@ -1,7 +1,11 @@
 
 # Photo Gallery
 
-To run this project on your local machine…
+Here’s an example of how this gallery looks…
+
+https://jimthoburn.com/learn-to-code-la/
+
+## To run this project on your local machine…
 
 1) Install [Ruby and Jekyll](https://jekyllrb.com/docs/installation/)
 
