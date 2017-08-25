@@ -1,0 +1,188 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:image" content="images/1024-wide/1.jpg" />
+
+  <title>{{ site.title }}</title>
+
+  <style>
+    body {
+      font: 100%/1.5 "Helvetica Neue", Helvetica, sans-serif;
+      padding: 0;
+      background: rgb(250, 250, 250);
+      color: rgb(51, 51, 51);
+      margin: 3em 0 4.5em;
+      text-align: center;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+    }
+    h1 {
+      margin-bottom: 0;
+      padding-left: 0.75em;
+      padding-right: 0.75em;
+    }
+    h1 + p {
+      margin-top: 0;
+      margin-bottom: 1.5em;
+      opacity: 0.5;
+    }
+    a {
+      color: rgb(255, 49, 102); /* @strawberry */
+      color: rgb(101, 156, 247); /* @boysenberry */
+    }
+    a:visited {
+      color: rgb(101, 156, 247); /* @boysenberry */
+    }
+    p a {
+      display: inline-block;
+      padding: 0.5em 1.5em;
+      background: rgb(255, 49, 102); /* @strawberry */
+      background: rgb(101, 156, 247); /* @boysenberry */
+      color: white;
+      border-radius: 0.25em;
+      text-decoration: none;
+      text-transform: lowercase;
+    }
+    p a:visited {
+      background-color: rgb(101, 156, 247); /* @boysenberry */
+      color: white;
+    }
+    ol,
+    li {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    ol {
+      margin: 3em 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    li {
+      margin: 0 0 3em 0;
+      flex-basis: 640px;
+    }
+    li a {
+      display: block;
+      box-sizing: border-box;
+      transition: opacity 0.2s;
+      /*
+      box-shadow: 0 0 1em rgba(0, 0, 0, 0.01);
+      */
+      text-decoration: none;
+    }
+    li a {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-bottom: 100%;
+      overflow: hidden;
+    }
+    /*
+    li a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0));
+    }
+    */
+    li a video,
+    li a img {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    @supports(object-fit: contain) {
+      li a video,
+      li a img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    /*
+    li a .caption {
+      display: block;
+      width: 100%;
+      left: 0;
+      text-transform: lowercase;
+      text-decoration: underline;
+      position: absolute;
+      z-index: 1;
+      color: white;
+      bottom: 0.75em;
+    }
+    */
+    li a:hover,
+    li a:active,
+    li a:focus {
+      opacity: 0.85;
+    }
+    @media (min-width: 30em) {
+      ol {
+        margin: 6em 0;
+      }
+      li {
+        margin: 1.5em;
+      }
+      /*
+      li a img {
+        box-shadow: 0 0 1.5em rgba(255, 255, 255, 1);
+      }
+      li a .caption {
+        bottom: 2.25em;
+      }
+      */
+      /*
+      li a::after {
+        height: calc(100% - 3em);
+        width: calc(100% - 3em);
+        left: 1.5em;
+        bottom: 1.5em;
+      }
+      */
+    }
+  </style>
+
+</head>
+<body>
+
+<h1>{{ site.title }}</h1>
+<p>{{ site.date }}</p>
+
+<p>
+  <a href="images/{{ site.uri }}.zip">Download All Photos</a><br />
+  <small>This works best on a computer</small>
+</p>
+
+<ol>
+  {% for i in (1..site.num_photos) %}
+    <li><a href="photos/{{ i }}"><img src="images/384-wide/{{ i }}.jpg" srcset="images/384-wide/{{ i }}.jpg 384w, images/512-wide/{{ i }}.jpg 512w, images/768-wide/{{ i }}.jpg 768w, images/1024-wide/{{ i }}.jpg 1024w, images/1536-wide/{{ i }}.jpg 1536w, images/2048-wide/{{ i }}.jpg 2048w" sizes="640px" width="320" alt="Photo {{ i }}" /></a></li>
+  {% endfor %}
+</ol>
+
+<p>
+  <a href="images/{{ site.uri }}.zip">Download All Photos</a><br />
+  <small>This works best on a computer</small>
+</p>
+
+</body>
+</html>

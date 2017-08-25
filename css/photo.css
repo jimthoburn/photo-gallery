@@ -1,0 +1,117 @@
+
+  body {
+    font: 100%/1.5 "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0;
+    background: rgb(250, 250, 250);
+    color: rgb(51, 51, 51);
+    background: rgb(25, 25, 25);
+    color: rgb(250, 250, 250);
+    margin: 0.75em 0 0 0;
+    text-align: center;
+  }
+  p {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    text-align: left;
+  }
+  @media (min-width: 20em) {
+    .download {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+  a {
+    color: rgb(255, 49, 102); /* @strawberry */
+    color: rgb(101, 156, 247); /* @boysenberry */
+  }
+  a:visited {
+    color: rgb(101, 156, 247); /* @boysenberry */
+  }
+  .all {
+    position: relative;
+    z-index: 1;
+  }
+  .download a {
+    color: inherit;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+  }
+  .download svg {
+    width: 0.75em;
+    height: 0.75em;
+    display: none;
+  }
+  nav ul,
+  nav li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  nav li a {
+    position: absolute;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    transition: opacity 0.2s;
+    opacity: 0.75;
+    color: inherit;
+  }
+  nav li a:hover,
+  nav li a:active,
+  nav li a:focus {
+    opacity: 1;
+  }
+  .next a {
+    right: 0;
+  }
+  .previous a {
+    left: 0;
+  }
+  @media (min-width: 40em) {
+    svg {
+      font-size: 2vmax;
+    }
+  }
+  nav li a {
+    top: 4.5em;
+    height: 80%;
+    height: calc(100vh - 9em);
+    display: flex;
+    align-items: center;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    box-sizing: border-box;
+  }
+  /*
+  @media (max-aspect-ratio: 3/2) {
+    nav li a {
+      background: black;
+      color: white;
+    }
+  }
+  */
+  video,
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  @supports (object-fit: contain) {
+    video,
+    img {
+      width: 100%;
+      height: calc(100vh - 7em);
+      object-fit: contain;
+    }
+  }

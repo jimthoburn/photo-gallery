@@ -1,0 +1,10 @@
+
+title: Photos of Japan
+uri: photos
+date: February, 2016
+num_photos: 6
+
+exclude:
+  - node_modules
+  - package.json
+  - gulpfile.js
