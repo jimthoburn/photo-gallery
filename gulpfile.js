@@ -12,7 +12,7 @@ const SOURCE_IMAGE_PATH     = 'images/original';
 const GENERATED_IMAGE_PATH  = 'images';
 
 const SIZES = [384, 512, 768, 1024, 1536, 2048];  // These can be any numbers you like! These particular sizes were chosen since they’re
-                                                  // device-agnostic and multilples of 256, which may make the maths easier for your processor.
+                                                  // device-agnostic and multiples of 256, which may make the maths easier for your processor.
 let sizesCursor;
 
 // Create a copy of each image, at the requested size
