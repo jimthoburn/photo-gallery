@@ -8,3 +8,13 @@ exclude:
   - package.json
   - gulpfile.js
   - create-zip.js
+  - LICENSE
+  - CNAME
+  - README.md
+
+keep_files:
+  - .git
+  - .gitignore
+  - .nojekyll
+  - CNAME
+  - README.md
