@@ -3,7 +3,7 @@
 
 Here’s an example of how this gallery looks…
 
-https://jimthoburn.com/learn-to-code-la/
+https://jimthoburn.github.io/photo-gallery/
 
 ## How to get this project running on your local machine
 
@@ -52,3 +52,5 @@ npm start
 5) View your gallery at [http://localhost:4000](http://localhost:4000)
 
 6) When you’re ready to share it, upload the contents of the `_site` folder to your favorite web host!
+
+You can also use [GitHub pages](https://pages.github.com).
