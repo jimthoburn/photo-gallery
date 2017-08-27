@@ -78,9 +78,6 @@ layout: null
       display: block;
       box-sizing: border-box;
       transition: opacity 0.2s;
-      /*
-      box-shadow: 0 0 1em rgba(0, 0, 0, 0.01);
-      */
       text-decoration: none;
     }
     li a {
@@ -90,17 +87,6 @@ layout: null
       padding-bottom: 100%;
       overflow: hidden;
     }
-    /*
-    li a::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0));
-    }
-    */
     li a video,
     li a img {
       display: block;
@@ -118,19 +104,6 @@ layout: null
         object-fit: contain;
       }
     }
-    /*
-    li a .caption {
-      display: block;
-      width: 100%;
-      left: 0;
-      text-transform: lowercase;
-      text-decoration: underline;
-      position: absolute;
-      z-index: 1;
-      color: white;
-      bottom: 0.75em;
-    }
-    */
     li a:hover,
     li a:active,
     li a:focus {
@@ -143,22 +116,6 @@ layout: null
       li {
         margin: 1.5em;
       }
-      /*
-      li a img {
-        box-shadow: 0 0 1.5em rgba(255, 255, 255, 1);
-      }
-      li a .caption {
-        bottom: 2.25em;
-      }
-      */
-      /*
-      li a::after {
-        height: calc(100% - 3em);
-        width: calc(100% - 3em);
-        left: 1.5em;
-        bottom: 1.5em;
-      }
-      */
     }
   </style>
 
@@ -169,7 +126,7 @@ layout: null
 <p>{{ site.date }}</p>
 
 <p>
-  <a href="images/{{ site.uri }}.zip">Download All Photos</a><br />
+  <a href="photos.zip">Download All Photos</a><br />
   <small>This works best on a computer</small>
 </p>
 
@@ -180,7 +137,7 @@ layout: null
 </ol>
 
 <p>
-  <a href="images/{{ site.uri }}.zip">Download All Photos</a><br />
+  <a href="photos.zip">Download All Photos</a><br />
   <small>This works best on a computer</small>
 </p>
 

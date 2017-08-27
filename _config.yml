@@ -1,10 +1,10 @@
 
-title: Photos of Japan
-uri: photos
-date: February, 2016
-num_photos: 6
+title: Learn to Code LA
+date: September 14, 2016
+num_photos: 3
 
 exclude:
   - node_modules
   - package.json
   - gulpfile.js
+  - create-zip.js
