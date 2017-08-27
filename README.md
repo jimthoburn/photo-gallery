@@ -43,16 +43,12 @@ date: September 14, 2016
 num_photos: 3
 ```
 
-4) Run Gulp to generate the images
+4) Run this command to generate and serve the website
 
 ```
-gulp
+npm start
 ```
 
-5) Run Jekyll to generate and serve the website
+5) View your gallery at [http://localhost:4000](http://localhost:4000)
 
-```
-jekyll serve
-```
-
-6) Upload the contents of the `_site` folder to your favorite web host!
+6) When you’re ready to share it, upload the contents of the `_site` folder to your favorite web host!
